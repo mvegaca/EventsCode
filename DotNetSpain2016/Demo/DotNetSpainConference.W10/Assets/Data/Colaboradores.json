@@ -1,0 +1,16 @@
+[
+  {
+    "MenuType": "DeepLink",
+    "Title": "Pue",
+    "Icon": "/Assets/DataImages/Pue.png",
+    "Target": "https://www.pue.es/website/",
+    "_id": "62f210c6-6c2c-4565-8b81-c2d6760c5837"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Ticjob",
+    "Icon": "/Assets/DataImages/Ticjob.png",
+    "Target": "http://www.ticjob.es/",
+    "_id": "a9e0c8d8-91a1-4b35-8638-5773f8836e8e"
+  }
+]

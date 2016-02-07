@@ -1,0 +1,37 @@
+[
+  {
+    "MenuType": "DeepLink",
+    "Title": "En coche",
+    "Icon": "/Assets/DataImages/coche-1.png",
+    "Target": "bingmaps:?collection=point.40.39385986328125_-3.796215057373047_Kinepolis%20Madrid&lvl=18",
+    "_id": "0fefba06-e924-47ed-9541-edcc64044652"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "En autobús",
+    "Icon": "/Assets/DataImages/bus-1.png",
+    "Target": "http://www.redtransporte.com/madrid/autobuses-interurbanos/572-madrid-pozuelo-de-alarcon.html",
+    "_id": "d57a96d1-0d1d-4dce-a5b1-7c68f9cf196c"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "En metro",
+    "Icon": "/Assets/DataImages/metro-1.png",
+    "Target": "https://www.metromadrid.es/es/viaja_en_metro/red_de_metro/lineas_y_horarios/metro_ligero03.html",
+    "_id": "6be184ab-9041-4cc8-9353-d49fab5f1ba2"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Inscribirme",
+    "Icon": "/Assets/DataImages/Entradas.png",
+    "Target": "https://dotnetspain2016.eventbrite.com/",
+    "_id": "1c014c29-f0d4-4413-b28c-d122a67dd898"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Email",
+    "Icon": "/Assets/DataImages/escribenos-2.png",
+    "Target": "mailto:esmsdn@microsoft.com",
+    "_id": "179bc5be-a015-4be1-9c05-29210fde25d1"
+  }
+]

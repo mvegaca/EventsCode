@@ -1,0 +1,72 @@
+[
+  {
+    "MenuType": "DeepLink",
+    "Title": "Altran",
+    "Icon": "/Assets/DataImages/Altran.png",
+    "Target": "http://www.altran.es/",
+    "_id": "f8fe1512-cb19-4dda-9746-216dbbb2b83d"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Avanade",
+    "Icon": "/Assets/DataImages/Avanade.png",
+    "Target": "http://www.avanade.com/en/home",
+    "_id": "fc73cbb9-c972-4cfe-9aeb-0956983d39b2"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Danysoft",
+    "Icon": "/Assets/DataImages/Danysoft.png",
+    "Target": "http://www.danysoft.com/",
+    "_id": "db774ded-69ab-4577-8770-692e14c8cd32"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "DevsDNA",
+    "Icon": "/Assets/DataImages/DevsDNA.png",
+    "Target": "http://www.devsdna.com/",
+    "_id": "7e51aa9b-b147-45a5-aba2-3bced8b10b61"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Encamina",
+    "Icon": "/Assets/DataImages/Encamina.png",
+    "Target": "http://www.encamina.com/",
+    "_id": "76ccab30-b348-475e-ba90-2fdebb8ff1b1"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Ilitia",
+    "Icon": "/Assets/DataImages/Ilitia.png",
+    "Target": "http://www.ilitia.com/",
+    "_id": "52203217-7c2e-47f3-a02d-89a2a4740fd7"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Intelequia",
+    "Icon": "/Assets/DataImages/Intelequia.png",
+    "Target": "https://intelequia.com/",
+    "_id": "10ee248f-0771-45d7-8179-92d9b19db300"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Plain Concepts",
+    "Icon": "/Assets/DataImages/PlainConcepts-1.png",
+    "Target": "http://www.plainconcepts.com/",
+    "_id": "135f8cbf-452d-4e3a-8251-cbc263a84a42"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Sogeti",
+    "Icon": "/Assets/DataImages/Sogeti.png",
+    "Target": "http://www.sogeti.es/",
+    "_id": "6bc1a298-4786-44b2-ac41-700c91e379b2"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Tokiota",
+    "Icon": "/Assets/DataImages/Tokiota.png",
+    "Target": "http://tokiota.es/",
+    "_id": "a7131fcc-9655-4e66-8489-6b9bbd9bbd92"
+  }
+]
