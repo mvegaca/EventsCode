@@ -1,0 +1,20 @@
+﻿@model List<LordOfCodes.InstagramSchema>
+
+
+<ul class="instragram-items">
+
+    @foreach (var item in Model)
+    {
+
+        <li class="row">
+            <div>
+                <img class="instragram-img" src="@item.ImageUrl" />
+            </div>
+            <div >
+                <span> @item.Title</span>
+                <span> @item.Published</span>
+                <span> @item.Author</span>
+            </div>
+        </li>
+    }
+</ul>
