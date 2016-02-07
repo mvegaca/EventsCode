@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a928bf50-5987-4ed1-a2d1-f6fefbbe80d5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DotNetSensorApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MWeather.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Base\BaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Base\NavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Base\NetworkServiceBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Interface\INavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Interface\INetworkService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\UnitConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Entities\VMStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SimpleViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\VMAccelerometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\VMBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\VMHome.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\VMInclinometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VAccelerometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VHome.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VInclinometer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\plane.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\01d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\01n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\02d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\02n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\03d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\03n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\04d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\04n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\09d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\09n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\10d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\10n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\11d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\11n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\13d.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\13n.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\sr.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WeatherIcons\ss.png" />
+  </ItemGroup>
+</Project>

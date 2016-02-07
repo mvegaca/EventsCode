@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="DotNetSensorApp.Views.VAccelerometer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DotNetSensorApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Accelerometer}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="24,12,0,0">
+            <TextBlock
+                Margin="0,0,0,0"
+                Text="DOTNET SPAIN CONFERENCE SENSOR APP"
+                Style="{StaticResource BaseTextBlockStyle}"/>
+            <TextBlock
+                Margin="0,0,0,0"
+                Text="Accelerometer"
+                Style="{StaticResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="24,12,24,12">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="Accelerometer sensor measure X, Y and Z axis accelerations in m/s2." Style="{StaticResource BodyTextBlockStyle}" Margin="0" TextWrapping="Wrap"/>
+                    <TextBlock Text="Acceleration X" Style="{StaticResource GroupHeaderTextBlockStyle}" Margin="0" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Status.Model.AccelerationX}" Style="{StaticResource BaseTextBlockStyle}" Margin="0"/>
+                    <TextBlock Text="Acceleration Y" Style="{StaticResource GroupHeaderTextBlockStyle}" Margin="0" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Status.Model.AccelerationY}" Style="{StaticResource BaseTextBlockStyle}" Margin="0"/>
+                    <TextBlock Text="Acceletarion Z" Style="{StaticResource GroupHeaderTextBlockStyle}" Margin="0" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Status.Model.AccelerationZ}" Style="{StaticResource BaseTextBlockStyle}" Margin="0"/>
+                    <Canvas
+                        HorizontalAlignment="Left"
+                        Width="{Binding AccelerometerControlCanvasWidth}"
+                        Height="{Binding AccelerometerControlCanvasHeight}"
+                        Background="Transparent"
+                        Margin="0,12,0,0">
+                        <Line
+                            Stroke="{StaticResource ApplicationForegroundThemeBrush}"
+                            X1="0"
+                            Y1="{Binding AccelerometerControlCanvasHalfHeight}"
+                            X2="{Binding AccelerometerControlCanvasWidth}"
+                            Y2="{Binding AccelerometerControlCanvasHalfHeight}"/>
+                        <Line
+                            Stroke="{StaticResource ApplicationForegroundThemeBrush}"
+                            X1="{Binding AccelerometerControlCanvasHalfWidth}"
+                            Y1="0"                                    
+                            X2="{Binding AccelerometerControlCanvasHalfWidth}"
+                            Y2="{Binding AccelerometerControlCanvasHeight}"/>
+                        <Ellipse
+                            Width="{Binding AccelerometerControlCircleSize}"
+                            Height="{Binding AccelerometerControlCircleSize}"
+                            Stroke="{StaticResource ApplicationForegroundThemeBrush}"
+                            Fill="Transparent"
+                            StrokeThickness="5"
+                            Canvas.Top="{Binding AccelerometerControlEllipseTop}"
+                            Canvas.Left="{Binding AccelerometerControlEllipseLeft}"/>
+                    </Canvas>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
