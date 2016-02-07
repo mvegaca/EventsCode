@@ -1,0 +1,16 @@
+Title ,Section Title y Description	
+5e505b
+Subtitle
+7c7b7b
+
+Navigation Pane Background
+f0f0f3
+Navigation Pane Foreground
+5e505b
+Navigation Pane Button
+fcc5a9
+
+Box Background
+fb9e71
+BoxForeground
+ffffff
