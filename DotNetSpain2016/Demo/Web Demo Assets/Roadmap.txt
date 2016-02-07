@@ -1,4 +1,36 @@
-Title ,Section Title y Description	
+Secciones
+
+Agenda
+Title, Description, Url, Image, Speaker
+
+Ponentes
+Name, Description, Image, Url, Twitter
+
+Twitter
+#dotnetspain2016
+Consumer key
+0K2eCSsci2NXHjsx1r48j7adC
+Consumer secret
+1aZhQwtPeefIPVRV8aJW49RCDmg7LwlAX4JIImJHVRXi45xEA1
+Acces Tokken
+275442106-YlBW4ovgJHta8dzbG3xalg7Mk1hapkJaBwcoeYaY
+Access Token Secret
+IlCKgTrecAYfxpFtUuO66lQKQLIFLbOY7rgkYhBo3UCPp
+
+Channel 9
+https://s.ch9.ms/Events/Microsoft-Spain-Events/dotNet-Spain-Conference-2016/RSS
+
+Mas Info
+En Bus
+http://www.redtransporte.com/madrid/autobuses-interurbanos/572-madrid-pozuelo-de-alarcon.html
+https://www.metromadrid.es/es/viaja_en_metro/red_de_metro/lineas_y_horarios/metro_ligero03.html
+https://dotnetspain2016.eventbrite.com/
+esmsdn@microsoft.com
+
+Patrocinadores
+
+
+Title ,Section Title y Description
 5e505b
 Subtitle
 7c7b7b
