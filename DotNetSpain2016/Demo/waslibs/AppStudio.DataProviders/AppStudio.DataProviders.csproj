@@ -42,6 +42,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BingMaps\BingMapsDataConfig.cs" />
+    <Compile Include="BingMaps\BingMapsDataProvider.cs" />
+    <Compile Include="BingMaps\BingMapsParser.cs" />
+    <Compile Include="BingMaps\BingMapsSchema.cs" />
     <Compile Include="Bing\BingDataConfig.cs" />
     <Compile Include="Bing\BingDataProvider.cs" />
     <Compile Include="Bing\BingParser.cs" />
@@ -128,6 +132,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

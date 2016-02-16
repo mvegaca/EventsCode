@@ -46,26 +46,6 @@
 			TitleTemplate="{StaticResource SectionListTitleTemplate}"
 			HeaderLinkStyle="{StaticResource SectionListHeaderLinkStyle}">
 			<was_controls:SectionListItem
-                HeaderLinkVisibility="Collapsed" TitleVisibility="Collapsed" ErrorVisibility="Collapsed" LoadingVisibility="Collapsed" ManageLoading="False">
-                <DataTemplate>
-                    <controls:HeroImage
-						Image="/Assets/DataImages/homeherodesktop.png"
-						MobileImage="/Assets/DataImages/homeheroMobile.png"/>
-                </DataTemplate>
-            </was_controls:SectionListItem>
-			<was_controls:SectionListItem
-                DataContext="{Binding DestacadoEnLaAgenda}"
-                HeaderLinkClickCommand="{Binding SectionHeaderClickCommand}" 
-                HeaderLinkVisibility="Visible"
-				Background="Transparent"
-                ErrorVisibility="{Binding HasLoadDataErrors, Converter={StaticResource BoolToVisibilityConverter}, FallbackValue=Collapsed}"
-                LoadingVisibility="{Binding IsBusy, Converter={StaticResource BoolToVisibilityConverter}, FallbackValue=Collapsed}"
-                d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}">
-                <DataTemplate>
-                    <list_layouts:ListBigVerticalCard DataContext="{Binding}" ItemsSource="{Binding Items}" ItemClickCommand="{Binding ItemClickCommand}" OneRowModeEnabled="True" Margin="19,0,12,24"/>
-                </DataTemplate>
-			</was_controls:SectionListItem>
-			<was_controls:SectionListItem
                 DataContext="{Binding Agenda}"
                 HeaderLinkClickCommand="{Binding SectionHeaderClickCommand}" 
                 HeaderLinkVisibility="Visible"
@@ -74,7 +54,7 @@
                 LoadingVisibility="{Binding IsBusy, Converter={StaticResource BoolToVisibilityConverter}, FallbackValue=Collapsed}"
                 d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}">
                 <DataTemplate>
-                    <list_layouts:ListTextCard DataContext="{Binding}" ItemsSource="{Binding Items}" ItemClickCommand="{Binding ItemClickCommand}" OneRowModeEnabled="True" Margin="19,0,12,24"/>
+                    <list_layouts:ListBigVerticalCard DataContext="{Binding}" ItemsSource="{Binding Items}" ItemClickCommand="{Binding ItemClickCommand}" OneRowModeEnabled="True" Margin="19,0,12,24"/>
                 </DataTemplate>
 			</was_controls:SectionListItem>
 			<was_controls:SectionListItem

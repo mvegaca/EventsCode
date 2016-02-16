@@ -4,7 +4,7 @@
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
-// <createdOn>2/5/2016 5:57:55 PM</createdOn>
+// <createdOn>2/16/2016 7:35:39 AM</createdOn>
 //
 //---------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ using System;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using AppStudio.DataProviders.DynamicStorage;
+using AppStudio.DataProviders.LocalStorage;
 using DotNetSpainConference.Sections;
 using DotNetSpainConference.Services;
 using DotNetSpainConference.ViewModels;

@@ -5,7 +5,7 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" 
   IgnorableNamespaces="uap mp appstudio">
-			<Identity Name="56538innovega.dotNetSpainConference" Publisher="CN=95473210-6DF6-4C41-9C3C-3C769879BD0F" Version="1.0.1.0" />
+			<Identity Name="56538innovega.dotNetSpainConference" Publisher="CN=95473210-6DF6-4C41-9C3C-3C769879BD0F" Version="1.0.3.0" />
 	    <mp:PhoneIdentity PhoneProductId="225510f9-06a2-4235-8597-6f32a74156d7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
     <Properties>
         <DisplayName>dotNet Spain Conference</DisplayName>
@@ -28,7 +28,7 @@
               BackgroundColor="#fd9e73">
                 <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#fd9e73"/>
                 <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
-                    <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=4wEAAB~LCAAAAAAABAB9kMFOhEAMht~l5yEZWFDgposxm6wehGQPxsMIXWwcBgJDXEJ4dwvLGg~6mUvb~ft/bUdIumxoEGJXcLitzZFKiEdIlFUv9deeOrtLIIZNIL0i8iInDG9yx/dD6URhIZ3Cwyi/3RRuECkQsK21xtxSbVbXSUCGVaOVxdk2I43PquKYyyfLHfetMgUZhkqegDqWDquCfx/bum86iF9HSPv3X9kBqfywDJBSLFapVfnnxedBY4XGnqULiNm8nOXijCarkd0PrWogPirdoYAnMnsyyD2m15pzdVpzPg3D55aLNrXDnPkC7jSVplpsJe~6q1SJZ4dJ/IVOsMtbauYL/Qxg2/4qP/iP717lvy1v~gZebElv4wEAAA=="/>
+                    <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=4wEAAB~LCAAAAAAABAB9kMFugzAMht/F5yAFChtw28o0Vep2GEg9TDtk4LJoISAStCLEu8~Bdtphq3Kxnd//Z3uCzBRjh5D6jMJtq4~yhnSCTFjx0n7tpbG7DFLYRDyokiDx4vim9MIw5l4SV9yrAkzK203lR4kABttWKSytbPXqymcGBTadEhadbSEVPouGYiqfLHXc90JXUhOU0wTSkHQ8K~j3sW~HzkD6OkE~vP/KDijrD0tjc84Wq9yK8vPi86CwQW1X6QIiNi1nqejQ0iok90MvOkiPQhlk8CT1XmqkHj0oRbk4nXM6DcFdy0Wb29FlIYM7JWvdLLZu110jalwdZvYXOkNT9rJzF/oZwPbDVX70H9~/yn9b3vwNlSSBwuMBAAA="/>
                     <uap:ShowNameOnTiles>
                         <uap:ShowOn Tile="square150x150Logo"/>
 						<uap:ShowOn Tile="square310x310Logo" />
@@ -43,7 +43,7 @@
     <appstudio:Metadata>
         <appstudio:Item Name="appId" Value="225510f9-06a2-4235-8597-6f32a74156d7" />
         <appstudio:Item Name="model" Version="1.13" />
-        <appstudio:Item Name="formula" Value="Win10" Version="1.12.0120.1" />
+        <appstudio:Item Name="formula" Value="Win10" Version="1.12.0214.1" />
         <appstudio:Item DataSource="Collection" Version="1.1.*"/>
         <appstudio:Item DataSource="Twitter" Version="1.1.*"/>
         <appstudio:Item DataSource="Rss" Version="1.1.*"/>

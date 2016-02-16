@@ -25,7 +25,6 @@ namespace DotNetSpainConference.ViewModels
         public MainViewModel(int visibleItems) : base()
         {
             PageTitle = "dotNet Spain Conference";
-            DestacadoEnLaAgenda = ListViewModel.CreateNew(Singleton<DestacadoEnLaAgendaConfig>.Instance, visibleItems);
             Agenda = ListViewModel.CreateNew(Singleton<AgendaConfig>.Instance, visibleItems);
             Ponentes = ListViewModel.CreateNew(Singleton<PonentesConfig>.Instance, visibleItems);
             Fotos = ListViewModel.CreateNew(Singleton<FotosConfig>.Instance, visibleItems);
@@ -50,7 +49,6 @@ namespace DotNetSpainConference.ViewModels
         }
 
         public string PageTitle { get; set; }
-        public ListViewModel DestacadoEnLaAgenda { get; private set; }
         public ListViewModel Agenda { get; private set; }
         public ListViewModel Ponentes { get; private set; }
         public ListViewModel Fotos { get; private set; }
@@ -111,7 +109,6 @@ namespace DotNetSpainConference.ViewModels
 
         private IEnumerable<ListViewModel> GetViewModels()
         {
-            yield return DestacadoEnLaAgenda;
             yield return Agenda;
             yield return Ponentes;
             yield return Fotos;

@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using AppStudio.DataProviders;
 using AppStudio.DataProviders.Core;
-using Windows.Storage;
-using AppStudio.DataProviders.DynamicStorage;
-using AppStudio.Uwp;
-using AppStudio.Uwp.Actions;
-using AppStudio.Uwp.Commands;
+using AppStudio.DataProviders.LocalStorage;
 using AppStudio.Uwp.Navigation;
+using AppStudio.Uwp;
 using System.Linq;
 using DotNetSpainConference.Config;
 using DotNetSpainConference.ViewModels;
@@ -20,19 +17,31 @@ namespace DotNetSpainConference.Sections
 {
     public class PonentesConfig : SectionConfigBase<Ponentes1Schema, Agenda1Schema>
     {
-	    public override Func<Task<IEnumerable<Ponentes1Schema>>> LoadDataAsyncFunc
+        public override int MaxRecords
         {
             get
             {
-                var config = new DynamicStorageDataConfig
+                return 50;
+            }
+        }
+        public override Func<Task<IEnumerable<Ponentes1Schema>>> LoadDataAsyncFunc
+        {
+            get
+            {
+                var config = new LocalStorageDataConfig
                 {
-                    Url = new Uri("http://ds.winappstudio.com/api/data/collection?dataRowListId=ea627736-97e3-4856-b77e-ac18d4ccc572&appId=225510f9-06a2-4235-8597-6f32a74156d7"),
-                    AppId = "225510f9-06a2-4235-8597-6f32a74156d7",
-                    StoreId = ApplicationData.Current.LocalSettings.Values[LocalSettingNames.StoreId] as string,
-                    DeviceType = ApplicationData.Current.LocalSettings.Values[LocalSettingNames.DeviceType] as string
+                    FilePath = "/Assets/Data/Ponentes.json"
                 };
 
-                return () => Singleton<DynamicStorageDataProvider<Ponentes1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
+                return () => Singleton<LocalStorageDataProvider<Ponentes1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
+            }
+        }
+
+        public override bool NeedsNetwork
+        {
+            get
+            {
+                return false;
             }
         }
 
@@ -96,17 +105,14 @@ namespace DotNetSpainConference.Sections
 			{
 				return new RelatedContentConfig<Agenda1Schema, Ponentes1Schema>()
 				{
+					NeedsNetwork = false,
 					LoadDataAsync = async (selected) =>
 					{
-						var config = new DynamicStorageDataConfig
+						var config = new LocalStorageDataConfig
 						{
-							Url = new Uri("http://ds.winappstudio.com/api/data/collection?dataRowListId=3502d929-886c-4480-98d0-d2e9c73d159a&appId=225510f9-06a2-4235-8597-6f32a74156d7"),
-							AppId = "225510f9-06a2-4235-8597-6f32a74156d7",
-							StoreId = ApplicationData.Current.LocalSettings.Values[LocalSettingNames.StoreId] as string,
-							DeviceType = ApplicationData.Current.LocalSettings.Values[LocalSettingNames.DeviceType] as string
+							FilePath = "/Assets/Data/Agenda.json"
 						};
-
-						var result = await Singleton<DynamicStorageDataProvider<Agenda1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
+						var result = await Singleton<LocalStorageDataProvider<Agenda1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
 						return result
 								.Where(r => r.Speaker == selected.Name)
 								.ToList();

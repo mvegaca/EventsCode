@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{23A5C41E-4CDE-4821-8CA0-EDB3782C5A66}</ProjectGuid>
+    <ProjectGuid>{94353920-1424-4E3D-B5A6-5194F3FB8282}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetSpainConference</RootNamespace>
@@ -198,10 +198,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\DestacadoEnLaAgendaListPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Pages\AgendaListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -239,10 +235,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\AboutPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Pages\DestacadoEnLaAgendaDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -365,9 +357,6 @@
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\DestacadoEnLaAgendaListPage.xaml.cs">
-      <DependentUpon>DestacadoEnLaAgendaListPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\AgendaListPage.xaml.cs">
       <DependentUpon>AgendaListPage.xaml</DependentUpon>
     </Compile>
@@ -397,9 +386,6 @@
     </Compile>
     <Compile Include="Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\DestacadoEnLaAgendaDetailPage.xaml.cs">
-      <DependentUpon>DestacadoEnLaAgendaDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AgendaDetailPage.xaml.cs">
       <DependentUpon>AgendaDetailPage.xaml</DependentUpon>
@@ -441,19 +427,17 @@
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sections\DestacadoEnLaAgenda1Schema.cs" />
     <Compile Include="Sections\Agenda1Schema.cs" />
     <Compile Include="Sections\Ponentes1Schema.cs" />
     <Compile Include="Sections\Fotos1Schema.cs" />
-    <Compile Include="Sections\DestacadoEnLaAgendaConfig.cs" />
-    <Compile Include="Sections\AgendaConfig.cs" />
-    <Compile Include="Sections\PonentesConfig.cs" />
     <Compile Include="Sections\FotosConfig.cs" />
     <Compile Include="Sections\FAQConfig.cs" />
     <Compile Include="Sections\MasInfoConfig.cs" />
     <Compile Include="Sections\PatrocinadoresConfig.cs" />
     <Compile Include="Sections\ColaboradoresConfig.cs" />
     <Compile Include="Sections\VideosChannel9Config.cs" />
+    <Compile Include="Sections\AgendaConfig.cs" />
+    <Compile Include="Sections\PonentesConfig.cs" />
     <Compile Include="Sections\TwitterConfig.cs" />
     <Compile Include="ViewModels\AboutThisAppViewModel.cs" />
     <Compile Include="ViewModels\DetailViewModel.cs" />
@@ -463,6 +447,9 @@
     <Compile Include="Navigation\AppNavigation.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\DataImages\MartinVega.png" />
+    <Content Include="Assets\DataImages\guest.jpg" />
+    <Content Include="Assets\DataImages\keynote.jpg" />
     <Content Include="Layouts\List\Breakpoints.Large.ContactCard.json" />
     <Content Include="Layouts\List\Breakpoints.Large.json" />
     <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCard.json" />
@@ -498,33 +485,73 @@
     <Content Include="Assets\Square71x71Logo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Data\Agenda.json" />
     <Content Include="Assets\Data\Colaboradores.json" />
     <Content Include="Assets\Data\FAQ.htm" />
     <Content Include="Assets\Data\MasInfo.json" />
     <Content Include="Assets\Data\Patrocinadores.json" />
+    <Content Include="Assets\Data\Ponentes.json" />
+    <Content Include="Assets\DataImages\AlbertoDiaz.png" />
+    <Content Include="Assets\DataImages\alejacma.jpg" />
+    <Content Include="Assets\DataImages\AlexCasquete.png" />
     <Content Include="Assets\DataImages\Altran.png" />
     <Content Include="Assets\DataImages\Avanade.png" />
+    <Content Include="Assets\DataImages\Bea_Isa.png" />
     <Content Include="Assets\DataImages\bus-1.png" />
+    <Content Include="Assets\DataImages\ChemaAlonso-1.png" />
     <Content Include="Assets\DataImages\coche-1.png" />
     <Content Include="Assets\DataImages\Danysoft.png" />
     <Content Include="Assets\DataImages\DevsDNA.png" />
+    <Content Include="Assets\DataImages\EdinKapic.png" />
+    <Content Include="Assets\DataImages\Eduard_Tomas.jpg" />
     <Content Include="Assets\DataImages\Encamina.png" />
+    <Content Include="Assets\DataImages\EnriqueCatala.png" />
     <Content Include="Assets\DataImages\Entradas.png" />
     <Content Include="Assets\DataImages\escribenos-2.png" />
+    <Content Include="Assets\DataImages\FernandoEscolar_JuanBacardit.png" />
+    <Content Include="Assets\DataImages\FrancescJaumot.png" />
+    <Content Include="Assets\DataImages\gorkma.jpg" />
+    <Content Include="Assets\DataImages\HadiHariri-1.png" />
+    <Content Include="Assets\DataImages\HadiHariri.png" />
     <Content Include="Assets\DataImages\heroMapdesktop.png" />
     <Content Include="Assets\DataImages\heroMapMobile.png" />
-    <Content Include="Assets\DataImages\homeherodesktop.png" />
-    <Content Include="Assets\DataImages\homeheroMobile.png" />
+    <Content Include="Assets\DataImages\HugoBiarge.png" />
+    <Content Include="Assets\DataImages\IbonLanda.png" />
     <Content Include="Assets\DataImages\Ilitia.png" />
     <Content Include="Assets\DataImages\InfoHeroDesktop-1.png" />
     <Content Include="Assets\DataImages\InfoHeromobile.png" />
     <Content Include="Assets\DataImages\Intelequia.png" />
+    <Content Include="Assets\DataImages\JavierSuarez.png" />
+    <Content Include="Assets\DataImages\JMJurado_PabloGavela-1.png" />
+    <Content Include="Assets\DataImages\JonBurguera.png" />
+    <Content Include="Assets\DataImages\JoseBonnin.png" />
+    <Content Include="Assets\DataImages\JosueYeray.png" />
+    <Content Include="Assets\DataImages\JuanCuello.png" />
+    <Content Include="Assets\DataImages\juanserv.jpg" />
+    <Content Include="Assets\DataImages\LluisFranco.png" />
+    <Content Include="Assets\DataImages\luguerre.jpg" />
+    <Content Include="Assets\DataImages\LuisFraile.png" />
+    <Content Include="Assets\DataImages\LuisRuiz.png" />
+    <Content Include="Assets\DataImages\Luis_Alfonso_Rey.jpg" />
+    <Content Include="Assets\DataImages\ManuDelgado_pe.png" />
+    <Content Include="Assets\DataImages\MarcRubi�o.jpg" />
+    <Content Include="Assets\DataImages\MarioCortes.png" />
+    <Content Include="Assets\DataImages\MatteoPagani.jpg" />
     <Content Include="Assets\DataImages\metro-1.png" />
+    <Content Include="Assets\DataImages\PabloSantos.jpg" />
     <Content Include="Assets\DataImages\PlainConcepts-1.png" />
     <Content Include="Assets\DataImages\Pue.png" />
+    <Content Include="Assets\DataImages\QuiqueMartinez.jpg" />
+    <Content Include="Assets\DataImages\RafaSerna.png" />
+    <Content Include="Assets\DataImages\RobertoGonzalez.png" />
+    <Content Include="Assets\DataImages\RodrigoCorral-1.png" />
+    <Content Include="Assets\DataImages\satya.jpg" />
     <Content Include="Assets\DataImages\Sogeti.png" />
     <Content Include="Assets\DataImages\Ticjob.png" />
     <Content Include="Assets\DataImages\Tokiota.png" />
+    <Content Include="Assets\DataImages\ToniRecio.png" />
+    <Content Include="Assets\DataImages\UnaiZorrilla-1.png" />
+    <Content Include="Assets\DataImages\untitled.png" />
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\Resources.resw" />
