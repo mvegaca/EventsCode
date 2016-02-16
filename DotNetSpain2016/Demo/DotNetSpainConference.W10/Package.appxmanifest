@@ -1,53 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" 
-  IgnorableNamespaces="uap mp appstudio">
-			<Identity Name="56538innovega.dotNetSpainConference" Publisher="CN=95473210-6DF6-4C41-9C3C-3C769879BD0F" Version="1.0.3.0" />
-	    <mp:PhoneIdentity PhoneProductId="225510f9-06a2-4235-8597-6f32a74156d7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
-    <Properties>
-        <DisplayName>dotNet Spain Conference</DisplayName>
-        <PublisherDisplayName>mvegaca</PublisherDisplayName>
-        <Logo>Assets\StoreLogo.png</Logo>
-    </Properties>
-    <Dependencies>
-        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
-    </Dependencies>
-    <Resources>
-        <Resource Language="x-generate"/>
-    </Resources>
-    <Applications>
-        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="DotNetSpainConference.App">
-            <uap:VisualElements 
-			  DisplayName="dotNet Spain Conference"
-              Square150x150Logo="Assets\Square150x150Logo.png"
-              Square44x44Logo="Assets\Square44x44Logo.png"
-              Description="App patrocinada por Microsoft para el evento dotNet Spain Conference del 1 de Marzo de 2016 en Madrid. Información del evento, charlas y speakers, Más Informacion en https://www.desarrollaconmicrosoft.com/Dotnetspain2016 y en Twitter @mvegaca"
-              BackgroundColor="#fd9e73">
-                <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#fd9e73"/>
-                <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
-                    <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=4wEAAB~LCAAAAAAABAB9kMFugzAMht/F5yAFChtw28o0Vep2GEg9TDtk4LJoISAStCLEu8~Bdtphq3Kxnd//Z3uCzBRjh5D6jMJtq4~yhnSCTFjx0n7tpbG7DFLYRDyokiDx4vim9MIw5l4SV9yrAkzK203lR4kABttWKSytbPXqymcGBTadEhadbSEVPouGYiqfLHXc90JXUhOU0wTSkHQ8K~j3sW~HzkD6OkE~vP/KDijrD0tjc84Wq9yK8vPi86CwQW1X6QIiNi1nqejQ0iok90MvOkiPQhlk8CT1XmqkHj0oRbk4nXM6DcFdy0Wb29FlIYM7JWvdLLZu110jalwdZvYXOkNT9rJzF/oZwPbDVX70H9~/yn9b3vwNlSSBwuMBAAA="/>
-                    <uap:ShowNameOnTiles>
-                        <uap:ShowOn Tile="square150x150Logo"/>
-						<uap:ShowOn Tile="square310x310Logo" />
-                    </uap:ShowNameOnTiles>
-                </uap:DefaultTile>
-            </uap:VisualElements>
-        </Application>
-    </Applications>
-    <Capabilities>
-        <Capability Name="internetClient" />
-    </Capabilities>
-    <appstudio:Metadata>
-        <appstudio:Item Name="appId" Value="225510f9-06a2-4235-8597-6f32a74156d7" />
-        <appstudio:Item Name="model" Version="1.13" />
-        <appstudio:Item Name="formula" Value="Win10" Version="1.12.0214.1" />
-        <appstudio:Item DataSource="Collection" Version="1.1.*"/>
-        <appstudio:Item DataSource="Twitter" Version="1.1.*"/>
-        <appstudio:Item DataSource="Rss" Version="1.1.*"/>
-        <appstudio:Item DataSource="Menu" Version="1.1.*"/>
-        <appstudio:Item DataSource="Html" Version="1.1.*"/>
-    </appstudio:Metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" IgnorableNamespaces="uap mp appstudio">
+  <Identity Name="56538innovega.dotNetSpainConference" Publisher="CN=95473210-6DF6-4C41-9C3C-3C769879BD0F" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="225510f9-06a2-4235-8597-6f32a74156d7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>dotNet Spain Conference</DisplayName>
+    <PublisherDisplayName>mvegaca</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="DotNetSpainConference.App">
+      <uap:VisualElements DisplayName="dotNet Spain Conference" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="App patrocinada por Microsoft para el evento dotNet Spain Conference del 1 de Marzo de 2016 en Madrid. Información del evento, charlas y speakers, Más Informacion en https://www.desarrollaconmicrosoft.com/Dotnetspain2016 y en Twitter @mvegaca" BackgroundColor="#fd9e73">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#fd9e73" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=4wEAAB~LCAAAAAAABAB9kMFugzAMht/F5yAFChtw28o0Vep2GEg9TDtk4LJoISAStCLEu8~Bdtphq3Kxnd//Z3uCzBRjh5D6jMJtq4~yhnSCTFjx0n7tpbG7DFLYRDyokiDx4vim9MIw5l4SV9yrAkzK203lR4kABttWKSytbPXqymcGBTadEhadbSEVPouGYiqfLHXc90JXUhOU0wTSkHQ8K~j3sW~HzkD6OkE~vP/KDijrD0tjc84Wq9yK8vPi86CwQW1X6QIiNi1nqejQ0iok90MvOkiPQhlk8CT1XmqkHj0oRbk4nXM6DcFdy0Wb29FlIYM7JWvdLLZu110jalwdZvYXOkNT9rJzF/oZwPbDVX70H9~/yn9b3vwNlSSBwuMBAAA=" />
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="225510f9-06a2-4235-8597-6f32a74156d7" />
+    <appstudio:Item Name="model" Version="1.13" />
+    <appstudio:Item Name="formula" Value="Win10" Version="1.12.0214.1" />
+    <appstudio:Item DataSource="Collection" Version="1.1.*" />
+    <appstudio:Item DataSource="Twitter" Version="1.1.*" />
+    <appstudio:Item DataSource="Rss" Version="1.1.*" />
+    <appstudio:Item DataSource="Menu" Version="1.1.*" />
+    <appstudio:Item DataSource="Html" Version="1.1.*" />
+  </appstudio:Metadata>
 </Package>
