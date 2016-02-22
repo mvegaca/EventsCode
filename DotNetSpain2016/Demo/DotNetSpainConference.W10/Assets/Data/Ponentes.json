@@ -17,7 +17,7 @@
   },
   {
     "_id": "56b0767dcd98480f10fe4d54",
-    "Name": "Unai Zorrilla Castro",
+    "Name": "Unai Zorrilla",
     "Description": "Unai Zorrilla Castro es ya un habitual en la comunidad de desarrollo .Net, participando en multitud de foros de arquitectura o eventos de desarrollo en general. Con multitud de artículos en revistas especializadas y diferentes libros sobre arquitectura y frameworks de desarrollo  .NET ha  sido nombrado como MVP de Microsoft en diferentes categorías desde el año 2005, siendo ASP.NET la última disciplina en la que ya lleva varios años. Compagina todas las tareas de comunidad con su trabajo como Dev Lead en Plain Concepts.",
     "Image": "/Assets/DataImages/UnaiZorrilla-1.png",
     "Url": "",
@@ -25,7 +25,7 @@
   },
   {
     "_id": "56b076b7cd98480f10fe4d55",
-    "Name": "Rodrigo Corral González",
+    "Name": "Rodrigo Corral",
     "Description": "I have been developing software since I was seventeen, first as freelance developer and then for companies like Sisteplant, leader in MES and CMMS software and Panda Security, one among the international leaders in software for security. I have been involved in a very interesting projects at Sisteplant builded using the latest Microsoft's Technologies and managed with Scrum from its begining.\r\n\r\nI am also one of the owners of Plain Concepts where I work as advisor, mentor and coach for first line companies in a wide range of subjects like project management, agile methodologies, CMMI, Team System, software patterns and architectures, software configuration management. I am one of the members of the Plain Concepts' Debugging & Optimization Team, a group of high qualified and experienced professionals specialized in tracking down and resolving stability and performace problems in the whole .Net platform, SQL Server and Oracle.\r\n\r\nI have been recognized as Microsoft Most Valuable Professional in two different categories, Visual C++ and Team System, several times. I am also Microsoft Certified Trainer, Certified Scrum Master, Certified Scrum Practicioner and Professional Scrum Developer Trainer\r\n\r\nI administer Geeks.ms, a Spanish popular community site for Microsoft's technologies developers. I write a quite popular blog hosted at Geeks.ms.\r\n\r\nI love everything related to software development. Apart from sofware development, my main hobby is play Basque hand ball.",
     "Image": "/Assets/DataImages/RodrigoCorral-1.png",
     "Url": "",
@@ -89,7 +89,7 @@
   },
   {
     "_id": "56b1e38945a92004f8074be2",
-    "Name": "Eduard Tomàs",
+    "Name": "Eduard Tomas",
     "Description": "Friki standard de nivel 10. Le gusta la música heviata, los libros de fantasía (buenos, nada de R. A. Salvatore, no hagamos coñas), la ciencia ficción, los juegos de rol con papel y dados de colores y como no, el desarrollo… Tras varios años de ir dando lata y de charlar en eventos internacionales (vale, un par de veces en Andorra) fue reconocido MVP en IIS/ASP.NET por parte de Microsoft, por lo que tiene en casa una esatuilla de algo parecido al cristal con 4 anillitos muy monos. También ganó una vez unos juegos florales en su escuela, hito que no se valora lo suficiente. En su tiempo libre lo puedes encontrar programando algún que otro engendro en Plain Concepts.",
     "Image": "/Assets/DataImages/Eduard_Tomas.jpg",
     "Url": "",
@@ -113,7 +113,7 @@
   },
   {
     "_id": "56b1e86345a92004f8074be5",
-    "Name": "Fernando Escolar / Juan Bacardit Barrer",
+    "Name": "Fernando Escolar y Juan Bacardit Barrer",
     "Description": "Fernando Escolar (@fernandoescolar | www.programandonet.com ): MVP Microsoft .Net. Presidente de la asociación catDotNet. Desarrollador y arquitecto. Especialista en Cloud y desarrollo .net.\r\n\r\nJuan Bacardit Barrera (@juanbacardit | www.juanbacardit.com) : Ingeniero superior y master en Lean Manufacturing, apasionado de la ingeniería del software, agilista… desarrollador de aplicaciones y ALM en Tokiota (www.tokiota.com).\r\n\r\n",
     "Image": "/Assets/DataImages/FernandoEscolar_JuanBacardit.png",
     "Url": "",
@@ -121,7 +121,7 @@
   },
   {
     "_id": "56b1e8c645a92004f8074be6",
-    "Name": "Francesc Jaumot Peña / Jose Cousiño",
+    "Name": "Francesc Jaumot Peña y Jose Cousiño",
     "Description": "Francesc Jaumot, emprendedor y entusiasta de las tecnologías Microsoft con amplio conocimiento en diferentes áreas de desarrollo con tecnologías .NET. Actualmente es fundador de diferentes compañías tecnológicas y Manager en Clibb. Desde el año pasado es MVP de ASP.NET.\r\n\r\nJose Cousiño, MCT desde 2004, profesor, Team Lead en Clibb y apasionado de las tecnologías Microsoft con amplio conocimiento en el área de .NET, sobretodo, en desarrollo web.",
     "Image": "/Assets/DataImages/FrancescJaumot.png",
     "Url": "",
@@ -281,19 +281,11 @@
   },
   {
     "_id": "56b2036145a92004f8074bfb",
-    "Name": "Luis Ruiz Pavón",
+    "Name": "Luis Ruiz Pavon",
     "Description": "Luis Ruiz (@luisruizpavon) Developer at PlainConcepts - MVP ASP.NET",
     "Image": "/Assets/DataImages/LuisRuiz.png",
     "Url": "",
     "Twitter": "https://twitter.com/luisruizpavon"
-  },
-  {
-    "_id": "56b2038745a92004f8074bfc",
-    "Name": "Hadi Hariri",
-    "Description": "Developer and creator of many things OSS, his passions includes Web Development and Software Architecture. Has authored a couple of books, a few courses and has been speaking at industry events for nearly 15 years. Currently at JetBrains leading the Developer Advocacy team. Spends as much time as he can writing code.",
-    "Image": "/Assets/DataImages/HadiHariri.png",
-    "Url": "",
-    "Twitter": "https://twitter.com/hhariri"
   },
   {
     "_id": "56b3159b45a92004f8074c2d",
@@ -320,7 +312,15 @@
     "Twitter": "https://twitter.com/wasat"
   },
   {
-    "_id": "56b493ff45a92004f8074c66",
+    "_id": "56b49aff45a92004f8074c31",
+    "Name": "Adrian Diaz",
+    "Description": "Adrián Díaz es MVP desde 2013 en la categoría de SharePoint. Lleva desarrollando con tecnologías Microsoft más de 10 años Actualmente es el responsable de arquitectura de ENCAMINA una consultora informática de Valencia que se destaca por realizar soluciones basadas en Tecnología Microsoft, principalmente en SharePoint y Azure.",
+    "Image": "/Assets/DataImages/adriandiaz.jpg",
+    "Url": "",
+    "Twitter": ""
+  },
+  {
+    "_id": "56b493ff45a92004f8074c64",
     "Name": "Martin Vega",
     "Description": "Consultor Senior especializado en tecnologías Microsoft, cuenta con 6 años de experiencia como desarrollador, principalmente focalizado en desarrollo de aplicaciones para Windows y Windows Phone. Actualmente es desarrollo en el equipo de Microsoft Windows App Studio.",
     "Image": "/Assets/DataImages/MartinVega.png",

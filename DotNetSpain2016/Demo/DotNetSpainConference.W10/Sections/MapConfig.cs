@@ -81,7 +81,7 @@ namespace DotNetSpainConference.Sections
                     Longitude = "-3.7964247",
                     Radius = "5"
                 };
-                return () => Singleton<BingMapsDataProvider>.Instance.LoadDataAsync(config, MaxRecords);
+                return () => Singleton<BingMapsDataProvider>.Instance.LoadDataAsync(config, 250);
             }
         }
     }

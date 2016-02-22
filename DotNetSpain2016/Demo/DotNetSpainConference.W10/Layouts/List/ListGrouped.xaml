@@ -9,10 +9,14 @@
     xmlns:was_controls="using:AppStudio.Uwp.Controls"
 	xmlns:was_commands="using:AppStudio.Uwp.Commands"
 	xmlns:vm="using:DotNetSpainConference.ViewModels"
+    xmlns:converters="using:DotNetSpainConference.Converters"
     DataContext="{Binding RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
+    <UserControl.Resources>
+        <converters:TechnologyToColorConverter x:Key="TechnologyToColorConverter"/>
+    </UserControl.Resources>
     <Grid>
         <was_controls:VisualBreakpoints x:Name="vbp" ConfigFile="/Layouts/List/Breakpoints.ListGrouped.json"/>
         <was_controls:Pivorama x:Name="pivorama"
@@ -49,7 +53,7 @@
                                     Height="{Binding Active.itemsHeight, ElementName=vbp}">
                                     <Grid
                                         Margin="{Binding Active.itemMargin, ElementName=vbp}"
-                                        Background="{StaticResource BoxBackground}"
+                                        Background="{Binding GroupBy, Converter={StaticResource TechnologyToColorConverter}}"
                                         Visibility="{Binding Active.mobileLayoutVisibility, ElementName=vbp}">
                                         <Grid>
                                             <Grid.ColumnDefinitions>
@@ -101,7 +105,7 @@
                                     </Grid>
                                     <Grid
                                         Margin="{Binding Active.itemMargin, ElementName=vbp}"
-                                        Background="{StaticResource BoxBackground}"
+                                        Background="{Binding GroupBy, Converter={StaticResource TechnologyToColorConverter}}"
                                         Visibility="{Binding Active.desktopLayoutVisibility, ElementName=vbp}">
                                         <Grid Margin="{Binding Active.itemPadding, ElementName=vbp}">
                                             <Grid.RowDefinitions>

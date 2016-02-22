@@ -8,10 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:was_controls="using:AppStudio.Uwp.Controls"
 	xmlns:vm="using:DotNetSpainConference.ViewModels"
+    xmlns:converters="using:DotNetSpainConference.Converters"
     DataContext="{Binding RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
+    <UserControl.Resources>
+        <converters:TechnologyToColorConverter x:Key="TechnologyToColorConverter"/>
+    </UserControl.Resources>
     <Grid>
         <was_controls:VisualBreakpoints x:Name="vbp" ConfigFile="/Layouts/List/Breakpoints.Large.ListBigHorizontalCardGroupedHome.json"></was_controls:VisualBreakpoints>
         <was_controls:ResponsiveGridView
@@ -29,7 +33,7 @@
                         HorizontalAlignment="Stretch">
                         <Grid
                             Margin="{Binding Active.itemMargin, ElementName=vbp}"
-                            Background="{StaticResource BoxBackground}"
+                            Background="{Binding GroupBy, Converter={StaticResource TechnologyToColorConverter}}"
                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                             <Grid>
                                 <Grid.ColumnDefinitions>

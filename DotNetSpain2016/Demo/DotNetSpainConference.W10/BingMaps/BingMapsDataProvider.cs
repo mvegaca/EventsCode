@@ -41,7 +41,7 @@ namespace AppStudio.DataProviders.BingMaps
         protected async override Task<IEnumerable<TSchema>> GetDataAsync<TSchema>(BingMapsDataConfig config, int maxRecords, IParser<TSchema> parser)
         {
             Assertions(config);
-            var requestedUri = new Uri(string.Format("http://spatial.virtualearth.net/REST/v1/data/{0}?spatialFilter=nearby({1},{2},{3})&$format=json&key={4}", config.DataSourceId, config.Latitude, config.Longitude, config.Radius, config.APIKey));
+            var requestedUri = new Uri(string.Format("http://spatial.virtualearth.net/REST/v1/data/{0}?spatialFilter=nearby({1},{2},{3})&$format=json&$top={4}&key={5}", config.DataSourceId, config.Latitude, config.Longitude, config.Radius, maxRecords, config.APIKey));
             string result = await DownloadAsync(requestedUri);
             return parser.Parse(result);
         }

@@ -316,6 +316,7 @@
     <Compile Include="BingMaps\BingMapsDataProvider.cs" />
     <Compile Include="BingMaps\BingMapsParser.cs" />
     <Compile Include="BingMaps\BingMapsSchema.cs" />
+    <Compile Include="Converters\TechnologyToColorConverter.cs" />
     <Compile Include="Pages\MapDetailPage.xaml.cs">
       <DependentUpon>MapDetailPage.xaml</DependentUpon>
     </Compile>
@@ -504,16 +505,24 @@
     <Compile Include="Services\UserFavorites.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\DataImages\adriandiaz.jpg" />
+    <Content Include="Assets\DataImages\ATM.png" />
+    <Content Include="Assets\DataImages\Bank.png" />
     <Content Include="Assets\DataImages\cercade.png" />
+    <Content Include="Assets\DataImages\Cinema.png" />
+    <Content Include="Assets\DataImages\GasolineStation.png" />
+    <Content Include="Assets\DataImages\GroceryStore.png" />
     <Content Include="Assets\DataImages\guest.jpg" />
     <Content Include="Assets\DataImages\homeherodesktop.png" />
     <Content Include="Assets\DataImages\homeheroMobile.png" />
+    <Content Include="Assets\DataImages\Hotel.png" />
     <Content Include="Assets\DataImages\keynote.jpg" />
     <Content Include="Assets\DataImages\MartinVega.png" />
     <Content Include="Assets\DataImages\ParkingLot.png" />
     <Content Include="Assets\DataImages\poi.png" />
     <Content Include="Assets\DataImages\Restaurant.png" />
     <Content Include="Assets\DataImages\Shopping.png" />
+    <Content Include="Assets\DataImages\SpecialtyStore.png" />
     <Content Include="Layouts\List\Breakpoints.Large.ContactCard.json" />
     <Content Include="Layouts\List\Breakpoints.Large.json" />
     <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCard.json" />

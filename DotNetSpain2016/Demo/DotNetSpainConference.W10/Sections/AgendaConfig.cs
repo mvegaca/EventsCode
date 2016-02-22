@@ -27,7 +27,7 @@ namespace DotNetSpainConference.Sections
                     FilePath = "/Assets/Data/Agenda.json"
                 };
 
-                return () => Singleton<LocalStorageDataProvider<Agenda1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
+                return () => Singleton<LocalStorageDataProvider<Agenda1Schema>>.Instance.LoadDataAsync(config, 41);
             }
         }
 

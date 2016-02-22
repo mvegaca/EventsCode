@@ -27,7 +27,7 @@ namespace DotNetSpainConference.Sections
                     FilePath = "/Assets/Data/Ponentes.json"
                 };
 
-                return () => Singleton<LocalStorageDataProvider<Ponentes1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
+                return () => Singleton<LocalStorageDataProvider<Ponentes1Schema>>.Instance.LoadDataAsync(config, 41);
             }
         }
 

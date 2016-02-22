@@ -91,7 +91,7 @@
   },
   {
     "_id": "56cb0fa92b7b6606eca6a3d5",
-    "Title": "Power BI para desarrolladores ",
+    "Title": "Power BI para desarrolladores",
     "Description": "En esta sesión práctica veremos distintos ejemplos de cómo utilizar el API de Power BI para crear paneles que muestren datos en tiempo real a partir de Azure Stream Analytics, integrar un report en nuestra aplicación web o incluso crear nuestro propio elemento de visualización.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
@@ -125,7 +125,7 @@
     "Description": "En este sesión ,  vamos a ver una visión rápida de Docker y por qué es beneficioso. También vamos a profundizar en algunas de las preguntas más comunes sobre los contenedores.¿Que es Docker? ¿Porque utilizar Docker? ¿Que beneficios tiene Docker para los desarrolladores .NET?  Veremos como podemos instalar nuestros desarrollos en ASP.NET en un contenedor tanto Windows como Linux, asi como las herramientas integradas con Visual Studio",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
-    "Speaker": "Adrian Diaz Cervera",
+    "Speaker": "Adrian Diaz",
     "Technology": "Cloud",
     "Time": "2016-02-24 13:30"
   },
@@ -152,7 +152,7 @@
   {
     "_id": "56cb0fa92b7b6606eca6a3dc",
     "Title": "Rider - A Cross-Platform .NET IDE",
-    "Description": "Rider is a new .NET IDE from JetBrains which provides a cross-platform experience for developing C# and VB.NET applications. Built on top of the IntelliJ platform, it provides many features you'd come to expect from an IDE. In this session we're going to take a look at some of the functionality of Rider and how it can help you create .NET 4.6 and .NET Core CLR applications. ",
+    "Description": "Rider is a new .NET IDE from JetBrains which provides a cross-platform experience for developing C# and VB.NET applications. Built on top of the IntelliJ platform, it provides many features you'd come to expect from an IDE. In this session we're going to take a look at some of the functionality of Rider and how it can help you create .NET 4.6 and .NET Core CLR applications.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Hadi Hariri",
@@ -161,8 +161,8 @@
   },
   {
     "_id": "56cb0fa92b7b6606eca6a3dd",
-    "Title": "Monitorizando espacios mediante IoT y Azure ",
-    "Description": "Hoy en día el IoT ya comienza a ser una de las palabras que más nos llaman pero que a su vez más desconocidas nos es; por este mismo motivo, vamos a explicar al detalle cómo podemos utilizar pequeños artefactos para recoger diferentes telemetrías . Veremos cómo podemos solucionar con Azure las necesidades de un escenario de ingestión masiva de telemetrías y su consumo con diferentes clientes. ",
+    "Title": "Monitorizando espacios mediante IoT y Azure",
+    "Description": "Hoy en día el IoT ya comienza a ser una de las palabras que más nos llaman pero que a su vez más desconocidas nos es; por este mismo motivo, vamos a explicar al detalle cómo podemos utilizar pequeños artefactos para recoger diferentes telemetrías . Veremos cómo podemos solucionar con Azure las necesidades de un escenario de ingestión masiva de telemetrías y su consumo con diferentes clientes.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Manu Delgado",
@@ -212,7 +212,7 @@
   {
     "_id": "56cb0fa92b7b6606eca6a3e2",
     "Title": "Modernizando las fábricas con Azure IoT hacia el concepto de Factorías 4.0",
-    "Description": "En esta sesión veremos cómo aprovechar las capacidades de IoT de Azure para transformar los procesos de una fábrica y mejorar su capacidad de producción. Os mostraremos como conectar un brazo robótico industrial a Azure, ver sus datos de proceso, analizar la información con Power BI y predecir sus tiempos de mantenimiento con Machine Learning. ",
+    "Description": "En esta sesión veremos cómo aprovechar las capacidades de IoT de Azure para transformar los procesos de una fábrica y mejorar su capacidad de producción. Os mostraremos como conectar un brazo robótico industrial a Azure, ver sus datos de proceso, analizar la información con Power BI y predecir sus tiempos de mantenimiento con Machine Learning.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Alberto Diaz",
@@ -222,7 +222,7 @@
   {
     "_id": "56cb0fa92b7b6606eca6a3e3",
     "Title": "Who is Who, Cortana?",
-    "Description": "Jugaremos con Cortana, Win10 y Azure para descubrir quien es el friki más grande del evento. Si quieres conocer como utilizar todas estas tecnologías y ademas pasar un buen rato, no te lo puedes perder. ",
+    "Description": "Jugaremos con Cortana, Win10 y Azure para descubrir quien es el friki más grande del evento. Si quieres conocer como utilizar todas estas tecnologías y ademas pasar un buen rato, no te lo puedes perder.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Marc Rubiño",
@@ -235,7 +235,7 @@
     "Description": "Mi propuesta se basa en una demostración de integración corporativa de aplicaciones multiplataforma Xamarin, empleando Azure para hacer Single Sign-On con una aplicación WebApi como sistema backend, utilizando una autorización por grupos de seguridad. Y todo ello incluyendo Universal Apps de Windows 10.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
-    "Speaker": "Juan Cuello ",
+    "Speaker": "Juan Cuello",
     "Technology": "Cross-Plat",
     "Time": "2016-02-24 15:45"
   },
@@ -282,7 +282,7 @@
   {
     "_id": "56cb0fa92b7b6606eca6a3e9",
     "Title": "El arte del logging en el Cloud",
-    "Description": "Cuando se desarrollan aplicaciones una de las partes más importantes que algunos desarrolladores olvidan son el registro y telemetría de una aplicación. Tener un registro de lo que está pasando en nuestra aplicación es fundamental, pero no solamente un simple registro, sino poder saber cómo de rápido (o lento) está funcionando el software, tener trazabilidad de la información de diagnóstico que ha generado una petición, que consultas de sql se han enviado a la base de datos y mucho más. Después de esto viene como explotar esa información y crear alertas. ",
+    "Description": "Cuando se desarrollan aplicaciones una de las partes más importantes que algunos desarrolladores olvidan son el registro y telemetría de una aplicación. Tener un registro de lo que está pasando en nuestra aplicación es fundamental, pero no solamente un simple registro, sino poder saber cómo de rápido (o lento) está funcionando el software, tener trazabilidad de la información de diagnóstico que ha generado una petición, que consultas de sql se han enviado a la base de datos y mucho más. Después de esto viene como explotar esa información y crear alertas.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Luis Guerrero",
@@ -332,7 +332,7 @@
   {
     "_id": "56cb0fa92b7b6606eca6a3ee",
     "Title": "Rx, la joya oculta de NET",
-    "Description": "Las Reactive Extensions (Rx) de Microsoft llevan ya unos cuantos años disponibles para hacer la programación asíncrona mucho más sencilla. Sin embargo, casi nadie ha oído hablar de ellas y mucho menos las habrá usado en un proyecto. En esta sesión vamos a descubrir esta sencilla pero revolucionaria librería que permite pasar de un modelo pull de consumidor de datos a un modelo push de observador de los mismos. Descubre por qué Netflix basa su arquitectura en Rx y como Rx te puede ayudar en una arquitectura de aplicación de cloud. ",
+    "Description": "Las Reactive Extensions (Rx) de Microsoft llevan ya unos cuantos años disponibles para hacer la programación asíncrona mucho más sencilla. Sin embargo, casi nadie ha oído hablar de ellas y mucho menos las habrá usado en un proyecto. En esta sesión vamos a descubrir esta sencilla pero revolucionaria librería que permite pasar de un modelo pull de consumidor de datos a un modelo push de observador de los mismos. Descubre por qué Netflix basa su arquitectura en Rx y como Rx te puede ayudar en una arquitectura de aplicación de cloud.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
     "Speaker": "Edin Kapic",
@@ -345,7 +345,7 @@
     "Description": "Visual Studio Team Services proporciona una solución para crear y desplegar tanto aplicaciones como servicios.En esta sesión veremos cómo integrar la herramienta de build de Visual Studio Team Services con varios controles de código fuente. Basados en Git, en TFS o cogiendo como origen GitHub.Buenas prácticas y consejos que debemos tener en cuenta a la hora de hacer el plan de nuestra estrategia de integración continua.También podemos comparar Visual Studio Team Services con otros servicios de automatización como Jenkins o Maven.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
-    "Speaker": "Luis Alfonso Rey del Saz",
+    "Speaker": "Luis Alfonso Rey",
     "Technology": "Tools/DevOps",
     "Time": "2016-02-24 18:45"
   },
@@ -405,7 +405,7 @@
     "Description": "Dos ingenieros de soporte de SQL Server explican cuáles son las mejores prácticas de conectividad y seguridad tanto para SQL Server on premises como para Azure Database. En una segunda parte se mostrara la potencia del CLR integrado en SQL Server, que podemos hacer con él, sus limitaciones y cómo podemos depurar nuestro código .NET corriendo dentro del motor de SQL Server.",
     "Url": "https://www.desarrollaconmicrosoft.com/Dotnetspain2016/Agenda",
     "Image": "",
-    "Speaker": "Pablo Gavela Lopez / José Manuel Jurado Diaz",
+    "Speaker": "Pablo Gavela Lopez y José Manuel Jurado Diaz",
     "Technology": "Data",
     "Time": "2016-02-24 18:45"
   }

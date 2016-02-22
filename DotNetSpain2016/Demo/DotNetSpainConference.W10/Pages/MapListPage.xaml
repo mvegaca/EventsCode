@@ -43,7 +43,7 @@
             Grid.ColumnSpan="{Binding Active.appBarColumnSpan, Source={StaticResource ResponsiveBehaviorsVBP}}">
         </was_actions:ActionsCommandBar>
         <maps:MapControl x:Name="mapControl"
-            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" ColorScheme="Light" Style="Road" Loaded="MapLoaded"/>
+            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" ColorScheme="Light" Style="Road" Loaded="MapLoaded" MapElementClick="MapElementClick"/>
         <!--<ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
             <Grid>
                 <Grid.RowDefinitions>
