@@ -106,6 +106,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\MapListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\MapDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -288,6 +296,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BingMaps\BingMapsDataConfig.cs" />
+    <Compile Include="BingMaps\BingMapsDataProvider.cs" />
+    <Compile Include="BingMaps\BingMapsParser.cs" />
+    <Compile Include="BingMaps\BingMapsSchema.cs" />
+    <Compile Include="Pages\MapListPage.xaml.cs">
+      <DependentUpon>MapListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MapDetailPage.xaml.cs">
+      <DependentUpon>MapDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\MapConfig.cs" />
     <Compile Include="Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
     </Compile>
@@ -447,9 +466,14 @@
     <Compile Include="Navigation\AppNavigation.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\DataImages\cercade.png" />
     <Content Include="Assets\DataImages\MartinVega.png" />
     <Content Include="Assets\DataImages\guest.jpg" />
     <Content Include="Assets\DataImages\keynote.jpg" />
+    <Content Include="Assets\DataImages\ParkingLot.png" />
+    <Content Include="Assets\DataImages\poi.png" />
+    <Content Include="Assets\DataImages\Restaurant.png" />
+    <Content Include="Assets\DataImages\Shopping.png" />
     <Content Include="Layouts\List\Breakpoints.Large.ContactCard.json" />
     <Content Include="Layouts\List\Breakpoints.Large.json" />
     <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCard.json" />
@@ -565,16 +589,6 @@
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\waslibs\AppStudio.DataProviders\AppStudio.DataProviders.csproj">
-      <Project>{7189a42d-6f1a-4fa3-8e00-e2c14fdf167a}</Project>
-      <Name>AppStudio.DataProviders</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\waslibs\AppStudio.Uwp\AppStudio.Uwp.csproj">
-      <Project>{ecedcde9-e70e-4673-a4e9-ffb437b32c0e}</Project>
-      <Name>AppStudio.Uwp</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

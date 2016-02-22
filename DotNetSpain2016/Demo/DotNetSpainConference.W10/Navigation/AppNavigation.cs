@@ -49,8 +49,9 @@ namespace DotNetSpainConference.Navigation
 			AddNode(Nodes, "Ponentes", "\ue125", string.Empty, "PonentesListPage", true);			
 			AddNode(Nodes, "Fotos", "\ue114", string.Empty, "FotosListPage", true);			
 			AddNode(Nodes, "Twitter", "\ue134", string.Empty, "TwitterListPage", true);			
-			AddNode(Nodes, "Videos Channel 9", "\ue116", string.Empty, "VideosChannel9ListPage", true);			
-			AddNode(Nodes, "FAQ", "\ue160", string.Empty, "FAQListPage", true);			
+			AddNode(Nodes, "Videos Channel 9", "\ue116", string.Empty, "VideosChannel9ListPage", true);
+            AddNode(Nodes, "Mapa", "\ue707", string.Empty, "MapListPage", true);
+            AddNode(Nodes, "FAQ", "\ue160", string.Empty, "FAQListPage", true);			
 			AddNode(Nodes, resourceLoader.GetString("NavigationPaneAbout"), "\ue11b", string.Empty, "AboutPage");
 			AddNode(Nodes, resourceLoader.GetString("NavigationPanePrivacy"), "\ue1f7", string.Empty, string.Empty, true, string.Empty, "https://www.desarrollaconmicrosoft.com/Dotnetspain2016");            
         }

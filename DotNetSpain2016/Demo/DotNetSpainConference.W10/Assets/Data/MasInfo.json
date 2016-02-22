@@ -1,5 +1,12 @@
 [
   {
+    "MenuType": "Page",
+    "Title": "Mapa",
+    "Icon": "/Assets/DataImages/cercade.png",
+    "Target": "MapListPage",
+    "_id": "a809dde9-879e-43f0-b3c0-d1d23b9f6b28"
+  },
+  {
     "MenuType": "DeepLink",
     "Title": "En coche",
     "Icon": "/Assets/DataImages/coche-1.png",

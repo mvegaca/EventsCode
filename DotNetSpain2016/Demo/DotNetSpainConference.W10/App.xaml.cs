@@ -19,9 +19,9 @@ using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using AppStudio.Uwp;
 using Windows.UI.Notifications;
 using DotNetSpainConference.Services;
+using AppStudio.Uwp;
 
 namespace DotNetSpainConference
 {
