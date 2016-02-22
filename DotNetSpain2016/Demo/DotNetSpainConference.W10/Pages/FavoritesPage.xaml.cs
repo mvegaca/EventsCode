@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 //
-// <copyright file="TwitterListPage.xaml.cs" company="Microsoft">
+// <copyright file="FavoritesPage.xaml.cs" company="Microsoft">
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
@@ -10,32 +10,24 @@
 
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Xaml;
-using AppStudio.DataProviders.Twitter;
-using DotNetSpainConference.Sections;
-using DotNetSpainConference.ViewModels;
 using AppStudio.Uwp;
+using DotNetSpainConference.ViewModels;
 
 namespace DotNetSpainConference.Pages
 {
-    public sealed partial class TwitterListPage : Page
+    public sealed partial class FavoritesPage : Page
     {
-	    public ListViewModel ViewModel { get; set; }
-        public TwitterListPage()
+        public FavoritesPage()
         {
-			this.ViewModel = ListViewModel.CreateNew(Singleton<TwitterConfig>.Instance);
-
+            this.ViewModel = new FavoritesViewModel();         
             this.InitializeComponent();
-
             new Microsoft.ApplicationInsights.TelemetryClient().TrackPageView(this.GetType().FullName);
         }
-
-
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
-        {
-            await this.ViewModel.LoadDataAsync();
-            base.OnNavigatedTo(e);
+        public FavoritesViewModel ViewModel { get; private set; }
+		protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {            
+            await ViewModel.LoadDataAsync();
+			base.OnNavigatedTo(e);
         }
-
-    }
+    }    
 }

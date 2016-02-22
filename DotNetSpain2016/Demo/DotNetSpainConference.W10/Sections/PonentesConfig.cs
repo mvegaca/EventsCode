@@ -9,6 +9,7 @@ using AppStudio.DataProviders.Core;
 using AppStudio.DataProviders.LocalStorage;
 using AppStudio.Uwp.Navigation;
 using AppStudio.Uwp;
+using Windows.ApplicationModel.Appointments;
 using System.Linq;
 using DotNetSpainConference.Config;
 using DotNetSpainConference.ViewModels;
@@ -17,14 +18,7 @@ namespace DotNetSpainConference.Sections
 {
     public class PonentesConfig : SectionConfigBase<Ponentes1Schema, Agenda1Schema>
     {
-        public override int MaxRecords
-        {
-            get
-            {
-                return 50;
-            }
-        }
-        public override Func<Task<IEnumerable<Ponentes1Schema>>> LoadDataAsyncFunc
+		public override Func<Task<IEnumerable<Ponentes1Schema>>> LoadDataAsyncFunc
         {
             get
             {
@@ -61,7 +55,6 @@ namespace DotNetSpainConference.Sections
                     {
                         viewModel.Title = item.Name.ToSafeString();
                         viewModel.SubTitle = item.Description.ToSafeString();
-                        viewModel.Description = "";
                         viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.Image.ToSafeString());
                     },
                     DetailNavigation = (item) =>
@@ -114,7 +107,7 @@ namespace DotNetSpainConference.Sections
 						};
 						var result = await Singleton<LocalStorageDataProvider<Agenda1Schema>>.Instance.LoadDataAsync(config, MaxRecords);
 						return result
-								.Where(r => r.Speaker == selected.Name)
+								.Where(r => r.Speaker.ToSafeString() == selected.Name.ToSafeString())
 								.ToList();
 					},
 					ListPage = new ListPageConfig<Agenda1Schema>

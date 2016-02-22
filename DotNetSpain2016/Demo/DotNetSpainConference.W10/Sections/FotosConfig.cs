@@ -12,6 +12,7 @@ using AppStudio.Uwp;
 using AppStudio.Uwp.Actions;
 using AppStudio.Uwp.Commands;
 using AppStudio.Uwp.Navigation;
+using Windows.ApplicationModel.Appointments;
 using System.Linq;
 using DotNetSpainConference.Config;
 using DotNetSpainConference.ViewModels;
@@ -52,7 +53,6 @@ namespace DotNetSpainConference.Sections
                     {
                         viewModel.Title = item.Title.ToSafeString();
                         viewModel.SubTitle = item.Description.ToSafeString();
-                        viewModel.Description = "";
                         viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.Image.ToSafeString());
                     },
                     DetailNavigation = (item) =>

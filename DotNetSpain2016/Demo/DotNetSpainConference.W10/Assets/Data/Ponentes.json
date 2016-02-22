@@ -1,4 +1,4 @@
-[  
+[
   {
     "_id": "56acd1572b7b660ea4853200",
     "Name": "Satya Nadella",
@@ -49,7 +49,7 @@
   },
   {
     "_id": "56b1d7e345a92004f8074bdd",
-    "Name": "Alberto Diaz Martin",
+    "Name": "Alberto Diaz",
     "Description": "Head of Innovation y Principal Team Leader en Encamina. Su labor en Encamina es liderar el desarrollo de soluciones Microsoft aportando el necesario perfil de innovación que se necesita en las empresas. Para la comunidad, ha fundado TenerifeDev (www.tenerifedev.com) con otros colaboradores, un grupo de usuarios de .NET en Tenerife, y es coordinador de SUGES (Grupo de Usuarios de SharePoint de España, www.suges.es) y colaborador con otras comunidades de usuarios. Un asiduo conferenciante en webcast y conferencias de tecnología de habla hispana. Desde el año 2013, ha iniciado una nueva etapa como Co-Director de la revista especializada en SharePoint, CompartiMOSS. Microsoft MVP Office Servers and Services desde el año 2011",
     "Image": "/Assets/DataImages/AlbertoDiaz.png",
     "Url": "http://mvp.microsoft.com/es-es/mvp/Alberto%20Diaz%20Martin-4030767",
@@ -161,7 +161,7 @@
   },
   {
     "_id": "56b1ea3545a92004f8074beb",
-    "Name": "Javier Suárez",
+    "Name": "Javier Suárez Ruiz",
     "Description": "Mi nombre es Javier Suárez Ruiz, soy Windows Platform Development MVP, desarrollador certificado Xamarin y trabajo en Plain Concepts. Gran apasionado de la comunidad, coordinador de grupos como CartujaDotNet, grupo de usuarios .NET de Sevilla, SVQXDG, grupo de desarrolladores Xamarin de Sevilla o WPSUG, grupo de usuarios hispanos de Windows.",
     "Image": "/Assets/DataImages/JavierSuarez.png",
     "Url": "",

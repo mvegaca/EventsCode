@@ -22,6 +22,8 @@ namespace DotNetSpainConference.ViewModels
         private bool _isBusy;
         private DateTime? _lastUpdated;
 
+        public string SectionName { get; set; }
+
         protected PageViewModelBase()
         {
             Actions = new List<ActionInfo>();
@@ -71,7 +73,7 @@ namespace DotNetSpainConference.ViewModels
 
                 if (!string.IsNullOrEmpty(item.SubTitle))
                 {
-                    dataRequest.Data.SetText(item.SubTitle.DecodeHtml());
+                    SetContent(dataRequest, item.SubTitle, false);
                 }
 
                 if (!string.IsNullOrEmpty(item.Description))
@@ -84,12 +86,20 @@ namespace DotNetSpainConference.ViewModels
                     SetContent(dataRequest, item.Content, supportsHtml);
                 }
 
+                if (!string.IsNullOrEmpty(item.Source))
+                {
+                    dataRequest.Data.SetWebLink(new Uri(item.Source));
+                }
+
                 var imageUrl = item.ImageUrl;
                 if (!string.IsNullOrEmpty(imageUrl))
                 {
                     if (imageUrl.StartsWith("http", StringComparison.OrdinalIgnoreCase))
                     {
-                        dataRequest.Data.SetWebLink(new Uri(imageUrl));
+                        if (string.IsNullOrEmpty(item.Source))
+                        {
+                            dataRequest.Data.SetWebLink(new Uri(imageUrl));
+                        }
                     }
                     else
                     {

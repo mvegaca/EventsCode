@@ -48,7 +48,6 @@ namespace DotNetSpainConference.Sections
                     {
                         viewModel.Title = item.Title.ToSafeString();
                         viewModel.SubTitle = item.Summary.ToSafeString();
-                        viewModel.Description = null;
                         viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.ImageUrl.ToSafeString());
                     },
                     DetailNavigation = (item) =>
@@ -71,6 +70,7 @@ namespace DotNetSpainConference.Sections
                     viewModel.Description = item.Content.ToSafeString();
                     viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.ImageUrl.ToSafeString());
                     viewModel.Content = null;
+					viewModel.Source = item.FeedUrl;
                 });
 
                 var actions = new List<ActionConfig<RssSchema>>

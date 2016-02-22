@@ -14,6 +14,7 @@
 			<Color x:Key="NavigationPaneBackgroundColor">#f0f0f3</Color>
 			<Color x:Key="NavigationPaneTextColor">#5e505b</Color>
 			<Color x:Key="NavigationPaneButtonColor">#fcc5a9</Color>
+			<Color x:Key="NavigationPaneButtonForegroundColor">#5e505b</Color>
 			<Color x:Key="BoxBackgroundColor">#fb9e71</Color>
 			<Color x:Key="BoxForegroundColor">#ffffff</Color>
         </ResourceDictionary>
@@ -28,6 +29,7 @@
             <Color x:Key="NavigationPaneBackgroundColor">#000000</Color>
             <Color x:Key="NavigationPaneTextColor">#ffffff</Color>
             <Color x:Key="NavigationPaneButtonColor">#666666</Color>
+			<Color x:Key="NavigationPaneButtonForegroundColor">#000000</Color>
             <Color x:Key="BoxBackgroundColor">#000000</Color>
             <Color x:Key="BoxForegroundColor">#ffffff</Color>
         </ResourceDictionary>

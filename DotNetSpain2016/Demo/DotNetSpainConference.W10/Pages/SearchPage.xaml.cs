@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 //
-// <copyright file="PatrocinadoresListPage.xaml.cs" company="Microsoft">
+// <copyright file="SearchPage.xaml.cs" company="Microsoft">
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
@@ -10,33 +10,23 @@
 
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Xaml;
-using AppStudio.DataProviders.LocalStorage;
-using AppStudio.DataProviders.Menu;
-using DotNetSpainConference.Sections;
 using DotNetSpainConference.ViewModels;
-using AppStudio.Uwp;
 
 namespace DotNetSpainConference.Pages
 {
-    public sealed partial class PatrocinadoresListPage : Page
+    public sealed partial class SearchPage : Page
     {
-	    public ListViewModel ViewModel { get; set; }
-        public PatrocinadoresListPage()
+        public SearchPage()
         {
-			this.ViewModel = ListViewModel.CreateNew(Singleton<PatrocinadoresConfig>.Instance);
-
+            ViewModel = new SearchViewModel();
             this.InitializeComponent();
-
             new Microsoft.ApplicationInsights.TelemetryClient().TrackPageView(this.GetType().FullName);
         }
-
-
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        public SearchViewModel ViewModel { get; private set; }
+		protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            await this.ViewModel.LoadDataAsync();
             base.OnNavigatedTo(e);
+            await ViewModel.SearchDataAsync(e.Parameter.ToString());
         }
-
-    }
+    }    
 }

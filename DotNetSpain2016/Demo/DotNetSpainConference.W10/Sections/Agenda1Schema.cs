@@ -18,5 +18,9 @@ namespace DotNetSpainConference.Sections
         public string Image { get; set; }
 
         public string Speaker { get; set; }
+
+        public string Technology { get; set; }
+
+        public DateTime? Time { get; set; }
     }
 }

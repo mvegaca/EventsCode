@@ -49,10 +49,10 @@ namespace DotNetSpainConference.ViewModels
         {
             get
             {
-                return "App patrocinada por Microsoft para el evento dotNet Spain Conference del 1 de Mar" +
-    "zo de 2016 en Madrid. Información del evento, charlas y speakers, Más Informacio" +
-    "n en https://www.desarrollaconmicrosoft.com/Dotnetspain2016 y en Twitter @mvegac" +
-    "a";
+                return "App patrocinada por Windows App Studio para el evento dotNet Spain Conference del" +
+    " 1 de Marzo de 2016 en Madrid. Información del evento, charlas y speakers, Más I" +
+    "nformacion en https://www.desarrollaconmicrosoft.com/Dotnetspain2016 y en Twitte" +
+    "r @mvegaca";
             }
         }
 		
@@ -61,14 +61,6 @@ namespace DotNetSpainConference.ViewModels
             get
             {
                 return "dotNet Spain Conference";
-            }
-        }
-
-		public string PrivacyUrl
-        {
-            get
-            {
-                return "https://www.desarrollaconmicrosoft.com/Dotnetspain2016";
             }
         }
 

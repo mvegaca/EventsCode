@@ -11,7 +11,7 @@
     <AssemblyName>DotNetSpainConference.W10</AssemblyName>
     <DefaultLanguage>es-es</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
@@ -106,11 +106,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Pages\MapListPage.xaml">
+    <Page Include="Pages\MapDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\MapDetailPage.xaml">
+    <Page Include="Pages\MapListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -167,6 +167,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Layouts\List\CarouselMedium.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layouts\List\ListGroupedHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layouts\List\ListGrouped.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -262,6 +270,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\FavoritesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Styles\AppBarButtons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -300,11 +316,11 @@
     <Compile Include="BingMaps\BingMapsDataProvider.cs" />
     <Compile Include="BingMaps\BingMapsParser.cs" />
     <Compile Include="BingMaps\BingMapsSchema.cs" />
-    <Compile Include="Pages\MapListPage.xaml.cs">
-      <DependentUpon>MapListPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\MapDetailPage.xaml.cs">
       <DependentUpon>MapDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MapListPage.xaml.cs">
+      <DependentUpon>MapListPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sections\MapConfig.cs" />
     <Compile Include="Shell.xaml.cs">
@@ -348,6 +364,12 @@
     </Compile>
     <Compile Include="Layouts\List\CarouselMedium.xaml.cs">
       <DependentUpon>CarouselMedium.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\List\ListGroupedHome.xaml.cs">
+      <DependentUpon>ListGroupedHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\List\ListGrouped.xaml.cs">
+      <DependentUpon>ListGrouped.xaml</DependentUpon>
     </Compile>
     <Compile Include="Layouts\Detail\MultiColumnDetailLayout.xaml.cs">
       <DependentUpon>MultiColumnDetailLayout.xaml</DependentUpon>
@@ -418,8 +440,15 @@
     <Compile Include="Pages\VideosChannel9DetailPage.xaml.cs">
       <DependentUpon>VideosChannel9DetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FavoritesPage.xaml.cs">
+      <DependentUpon>FavoritesPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DotNetSpainConference.W10_StoreKey.pfx" />
     <None Include="project.json" />
     <None Include="Service References\Application Insights\ConnectedService.json" />
   </ItemGroup>
@@ -433,10 +462,16 @@
     <Compile Include="Services\DeviceFamilyService.cs" />
     <Compile Include="ViewModels\AdvertisingViewModel.cs" />
     <Compile Include="Config\RelatedContentConfig.cs" />
+    <Compile Include="ViewModels\GroupedItemViewModel.cs" />
+    <Compile Include="Services\RoamingService.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="ViewModels\GroupedListViewModel.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Navigation\NavigationNode.cs" />
     <Compile Include="Navigation\NavigationTemplateSelector.cs" />
     <Compile Include="Layouts\Detail\BaseDetailLayout.cs" />
-    <Compile Include="MenuExtensions.cs" />
+    <Compile Include="Extensions\MenuExtensions.cs" />
     <Compile Include="Services\TileServices.cs" />
     <Compile Include="Triggers\IsTypePresentStateTrigger.cs" />
     <Compile Include="Triggers\OrientationStateTrigger.cs" />
@@ -463,13 +498,18 @@
     <Compile Include="ViewModels\ListViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\PrivacyViewModel.cs" />
+    <Compile Include="ViewModels\SearchViewModel.cs" />
+    <Compile Include="ViewModels\FavoritesViewModel.cs" />
     <Compile Include="Navigation\AppNavigation.cs" />
+    <Compile Include="Services\UserFavorites.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\DataImages\cercade.png" />
-    <Content Include="Assets\DataImages\MartinVega.png" />
     <Content Include="Assets\DataImages\guest.jpg" />
+    <Content Include="Assets\DataImages\homeherodesktop.png" />
+    <Content Include="Assets\DataImages\homeheroMobile.png" />
     <Content Include="Assets\DataImages\keynote.jpg" />
+    <Content Include="Assets\DataImages\MartinVega.png" />
     <Content Include="Assets\DataImages\ParkingLot.png" />
     <Content Include="Assets\DataImages\poi.png" />
     <Content Include="Assets\DataImages\Restaurant.png" />
@@ -487,6 +527,8 @@
     <Content Include="Layouts\List\Breakpoints.Medium.MenuText.json" />
     <Content Include="Layouts\List\Breakpoints.Medium.Photo.json" />
     <Content Include="Layouts\List\Breakpoints.Medium.ListTextCard.json" />
+    <Content Include="Layouts\List\Breakpoints.ListGrouped.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCardGroupedHome.json" />
     <Content Include="Assets\Design\DesignData.json" />
     <Content Include="Assets\Design\DesignDataHtml.json" />
     <Content Include="Assets\Design\DesignDataMenu.json" />
@@ -586,7 +628,7 @@
   </ItemGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
+    <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>

@@ -45,7 +45,8 @@ namespace DotNetSpainConference.Navigation
             Nodes = new ObservableCollection<NavigationNode>();
 		    var resourceLoader = new ResourceLoader();
 			AddNode(Nodes, "Home", "\ue10f", string.Empty, "HomePage", true, @"dotNet Spain Conference");
-			AddNode(Nodes, "Agenda", "\ue163", string.Empty, "AgendaListPage", true);			
+				AddNode(Nodes, "Favoritos", "\ue113", string.Empty, "FavoritesPage", true);
+				AddNode(Nodes, "Agenda", "\ue163", string.Empty, "AgendaListPage", true);			
 			AddNode(Nodes, "Ponentes", "\ue125", string.Empty, "PonentesListPage", true);			
 			AddNode(Nodes, "Fotos", "\ue114", string.Empty, "FotosListPage", true);			
 			AddNode(Nodes, "Twitter", "\ue134", string.Empty, "TwitterListPage", true);			

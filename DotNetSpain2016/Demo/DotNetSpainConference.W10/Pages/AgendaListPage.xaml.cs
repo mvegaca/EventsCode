@@ -4,7 +4,7 @@
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
-// <createdOn>2/16/2016 7:35:39 AM</createdOn>
+// <createdOn>2/22/2016 2:47:25 PM</createdOn>
 //
 //---------------------------------------------------------------------------
 
@@ -20,15 +20,15 @@ namespace DotNetSpainConference.Pages
 {
     public sealed partial class AgendaListPage : Page
     {
+		public GroupedListViewModel ViewModel { get; set; }
         public AgendaListPage()
         {
-            this.ViewModel = ListViewModel.CreateNew(Singleton<AgendaConfig>.Instance);
+			this.ViewModel = GroupedListViewModel.CreateNew(Singleton<AgendaConfig>.Instance);
 
             this.InitializeComponent();
+
             new Microsoft.ApplicationInsights.TelemetryClient().TrackPageView(this.GetType().FullName);
         }
-
-        public ListViewModel ViewModel { get; set; }
 
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)

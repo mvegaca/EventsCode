@@ -4,7 +4,7 @@
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
-// <createdOn>2/5/2016 5:57:55 PM</createdOn>
+// <createdOn>2/22/2016 2:47:25 PM</createdOn>
 //
 //---------------------------------------------------------------------------
 
@@ -19,9 +19,9 @@ using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using AppStudio.Uwp;
 using Windows.UI.Notifications;
 using DotNetSpainConference.Services;
-using AppStudio.Uwp;
 
 namespace DotNetSpainConference
 {
@@ -63,6 +63,7 @@ namespace DotNetSpainConference
 
             GetAppData();
             SetupTiles();
+			UserFavorites.InitAsync().RunAndForget();
 
             Frame rootFrame = Window.Current.Content as Frame;
 

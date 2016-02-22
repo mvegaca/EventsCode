@@ -4,7 +4,7 @@
 //    Copyright (C) 2015 by Microsoft Corporation.  All rights reserved.
 // </copyright>
 //
-// <createdOn>2/5/2016 5:57:55 PM</createdOn>
+// <createdOn>2/22/2016 2:47:25 PM</createdOn>
 //
 //---------------------------------------------------------------------------
 
@@ -21,15 +21,15 @@ namespace DotNetSpainConference.Pages
 {
     public sealed partial class ColaboradoresListPage : Page
     {
+	    public ListViewModel ViewModel { get; set; }
         public ColaboradoresListPage()
         {
-            this.ViewModel = ListViewModel.CreateNew(Singleton<ColaboradoresConfig>.Instance);
+			this.ViewModel = ListViewModel.CreateNew(Singleton<ColaboradoresConfig>.Instance);
 
             this.InitializeComponent();
+
             new Microsoft.ApplicationInsights.TelemetryClient().TrackPageView(this.GetType().FullName);
         }
-
-        public ListViewModel ViewModel { get; set; }
 
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
