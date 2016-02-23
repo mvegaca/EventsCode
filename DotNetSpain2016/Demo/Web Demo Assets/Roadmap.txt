@@ -1,7 +1,7 @@
 Secciones
 
 Agenda
-Title, Description, Url, Image, Speaker
+Title, Description, Url, Image, Speaker, Technology, Time
 
 Ponentes
 Name, Description, Image, Url, Twitter
