@@ -18,25 +18,7 @@ namespace DotNetSpainConference.Sections
         {
             get
             {
-                var bindings = new List<Action<ItemViewModel, BingMapsSchema>>();
-                bindings.Add((viewModel, item) =>
-                {
-                    viewModel.PageTitle = item.DisplayName.ToSafeString();
-                    viewModel.Title = item.Name.ToSafeString();
-                    viewModel.Description = string.Format("{0}. {1} {2}. Teléfono {3}", item.AddressLine, item.Locality, item.AdminDistrict, item.Phone);
-                    viewModel.Content = null;
-                });
-                var actions = new List<ActionConfig<BingMapsSchema>>
-                {
-                    ActionConfig<BingMapsSchema>.Phone("Llamar", (item) => item.Phone),
-                    ActionConfig<BingMapsSchema>.Address("Ir", (item) => string.Format("{0}_{1}_{2}", item.Latitude, item.Longitude, item.Name))
-                };
-                return new DetailPageConfig<BingMapsSchema>()
-                {
-                    Title = "Cerca de DotNet Spain Conference",
-                    LayoutBindings = bindings,
-                    Actions = actions
-                };
+                return null;
             }
         }
 
@@ -63,7 +45,7 @@ namespace DotNetSpainConference.Sections
                     },
                     DetailNavigation = (item) =>
                     {
-                        return NavigationInfo.FromPage("MapDetailPage", true);
+                        return new NavigationInfo() { NavigationType = NavigationType.DeepLink, TargetUri = new Uri(string.Format("bingmaps:?collection=point.{0}_{1}_{2}&lvl=18", item.Latitude, item.Longitude, item.Name), UriKind.Absolute) };
                     }
                 };
             }
@@ -81,7 +63,7 @@ namespace DotNetSpainConference.Sections
                     Longitude = "-3.7964247",
                     Radius = "5"
                 };
-                return () => Singleton<BingMapsDataProvider>.Instance.LoadDataAsync(config, 250);
+                return () => Singleton<BingMapsDataProvider>.Instance.LoadDataAsync(config, 100);
             }
         }
     }

@@ -25,7 +25,7 @@ namespace DotNetSpainConference.Sections
             {
                 var config = new RssDataConfig
                 {
-                    Url = new Uri("https://s.ch9.ms/Events/Microsoft-Spain-Events/dotNet-Spain-Conference-2016/RSS")
+                    Url = new Uri("https://channel9.msdn.com/Events/NET-Conference/2016/RSS")
                 };
 
                 return () => Singleton<RssDataProvider>.Instance.LoadDataAsync(config, MaxRecords);
@@ -69,7 +69,7 @@ namespace DotNetSpainConference.Sections
                     viewModel.Title = item.Title.ToSafeString();
                     viewModel.Description = item.Content.ToSafeString();
                     viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.ImageUrl.ToSafeString());
-                    viewModel.Content = null;
+                    viewModel.Content = item.Content.ToSafeString();
 					viewModel.Source = item.FeedUrl;
                 });
 

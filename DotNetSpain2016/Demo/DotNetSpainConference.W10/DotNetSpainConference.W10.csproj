@@ -106,10 +106,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Pages\MapDetailPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Pages\MapListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -317,9 +313,6 @@
     <Compile Include="BingMaps\BingMapsParser.cs" />
     <Compile Include="BingMaps\BingMapsSchema.cs" />
     <Compile Include="Converters\TechnologyToColorConverter.cs" />
-    <Compile Include="Pages\MapDetailPage.xaml.cs">
-      <DependentUpon>MapDetailPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\MapListPage.xaml.cs">
       <DependentUpon>MapListPage.xaml</DependentUpon>
     </Compile>

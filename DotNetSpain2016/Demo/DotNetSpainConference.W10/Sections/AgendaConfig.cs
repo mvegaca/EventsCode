@@ -80,7 +80,7 @@ namespace DotNetSpainConference.Sections
                 var bindings = new List<Action<ItemViewModel, Agenda1Schema>>();
                 bindings.Add((viewModel, item) =>
                 {
-                    viewModel.PageTitle = "Detail";
+                    viewModel.PageTitle = item.Technology;
                     viewModel.Title = item.Title.ToSafeString();
                     viewModel.Description = item.Description.ToSafeString();
                     viewModel.ImageUrl = ItemViewModel.LoadSafeUrl("");
