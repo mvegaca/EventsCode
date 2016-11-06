@@ -7,7 +7,6 @@ using AppStudio.Uwp.Commands;
 using AppStudio.Uwp.Navigation;
 using AppStudio.DataProviders.WordPress;
 
-
 namespace WorkshopApp.ViewModels
 {
     public class MainViewModel : ObservableBase
@@ -34,8 +33,11 @@ namespace WorkshopApp.ViewModels
 
         public async Task LoadDataAsync()
         {
-            var freshData = await _dataProvider.LoadDataAsync(_config);
-            Items = new ObservableCollection<WordPressSchema>(freshData);
+            if (Items == null)
+            {
+                var freshData = await _dataProvider.LoadDataAsync(_config);
+                Items = new ObservableCollection<WordPressSchema>(freshData);
+            }
         }
 
         public ICommand LoadMoreCommand

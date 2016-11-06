@@ -14,6 +14,7 @@ namespace WorkshopApp
             this.InitializeComponent();
             ViewModel = new MainViewModel();
             DataContext = ViewModel;
+            base.NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)

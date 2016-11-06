@@ -28,7 +28,20 @@
     </Page.Resources>
 
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#333">
+            <TextBlock
+                Margin="24,0"
+                FontSize="26"
+                VerticalAlignment="Center"
+                Foreground="White"
+                Text="WordPress Blog"/>
+        </Grid>
         <controls:ResponsiveGridView
+            Grid.Row="1"
             ItemsSource="{Binding Items}"
             DesiredWidth="200"
             ItemHeight="250"
@@ -36,19 +49,19 @@
             ItemClickCommand="{Binding GoToDetailCommand}">
             <controls:ResponsiveGridView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
+                    <Grid Margin="6">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Image Source="{Binding ImageUrl}" Stretch="UniformToFill"/>
+                        <controls:ImageEx Source="{Binding ImageUrl}" Stretch="UniformToFill" Foreground="#1777fb"/>
                         <Grid Grid.Row="1" Margin="16,8,16,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Text="{Binding Title}" Style="{StaticResource WordPressTitleStyle}"/>
+                            <TextBlock Grid.Row="0" Text="{Binding Title}" Style="{StaticResource WordPressTitleStyle}" MaxLines="3"/>
                             <TextBlock Grid.Row="1" Text="{Binding Summary}" Style="{StaticResource WordPressSubtitleStyle}"/>
                         </Grid>
                         <TextBlock Grid.Row="2" Text="{Binding Author}" Margin="16,8" Style="{StaticResource WordPressAuthorStyle}"/>
