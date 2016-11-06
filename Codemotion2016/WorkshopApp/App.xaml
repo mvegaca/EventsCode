@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="WorkshopApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkshopApp"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <Style x:Key="BaseWordPressTextStyle" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+        </Style>
+    </Application.Resources>
+
+</Application>

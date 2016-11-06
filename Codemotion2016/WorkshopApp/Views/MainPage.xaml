@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="WorkshopApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkshopApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:AppStudio.Uwp.Controls"
+    xmlns:commands="using:AppStudio.Uwp.Commands"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <Style x:Key="WordPressTitleStyle" TargetType="TextBlock" BasedOn="{StaticResource BaseWordPressTextStyle}">
+            <Setter Property="Foreground" Value="#333"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style x:Key="WordPressSubtitleStyle" TargetType="TextBlock" BasedOn="{StaticResource BaseWordPressTextStyle}">
+            <Setter Property="Foreground" Value="#666"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style x:Key="WordPressAuthorStyle" TargetType="TextBlock" BasedOn="{StaticResource BaseWordPressTextStyle}">
+            <Setter Property="Foreground" Value="#1777fb"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <controls:ResponsiveGridView
+            ItemsSource="{Binding Items}"
+            DesiredWidth="200"
+            ItemHeight="250"
+            commands:EndOfScrollCommand.Command="{Binding LoadMoreCommand}"
+            ItemClickCommand="{Binding GoToDetailCommand}">
+            <controls:ResponsiveGridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding ImageUrl}" Stretch="UniformToFill"/>
+                        <Grid Grid.Row="1" Margin="16,8,16,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Text="{Binding Title}" Style="{StaticResource WordPressTitleStyle}"/>
+                            <TextBlock Grid.Row="1" Text="{Binding Summary}" Style="{StaticResource WordPressSubtitleStyle}"/>
+                        </Grid>
+                        <TextBlock Grid.Row="2" Text="{Binding Author}" Margin="16,8" Style="{StaticResource WordPressAuthorStyle}"/>
+                    </Grid>
+                </DataTemplate>
+            </controls:ResponsiveGridView.ItemTemplate>
+        </controls:ResponsiveGridView>
+    </Grid>
+</Page>

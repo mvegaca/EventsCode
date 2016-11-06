@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="WorkshopApp.DetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkshopApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:AppStudio.Uwp.Controls"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <Style x:Key="WordPressDetailTitleStyle" TargetType="TextBlock" BasedOn="{StaticResource BaseWordPressTextStyle}">
+            <Setter Property="Foreground" Value="#333"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel Margin="12,50">
+                <TextBlock Text="{Binding Item.Title}" Style="{StaticResource WordPressDetailTitleStyle}" Margin="0,16"/>
+                <controls:HtmlBlock Source="{Binding Item.Content}" MaxWidth="1000" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
