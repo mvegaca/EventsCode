@@ -38,7 +38,7 @@
                 FontSize="26"
                 VerticalAlignment="Center"
                 Foreground="White"
-                Text="WordPress Blog"/>
+                Text="Simply WordPress"/>
         </Grid>
         <controls:ResponsiveGridView
             Grid.Row="1"
@@ -82,7 +82,7 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Foreground="#ddd"
-                Text="Cargando nuevos artículos..."/>
+                Text="Loading new articles..."/>
         </Grid>
     </Grid>
 </Page>
