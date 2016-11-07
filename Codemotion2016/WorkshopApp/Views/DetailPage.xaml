@@ -23,6 +23,7 @@
                 <Grid Background="#333">
                     <TextBlock Text="{Binding Item.Title}" Style="{StaticResource WordPressDetailTitleStyle}" Margin="12,24"/>
                 </Grid>
+                <controls:ImageEx Source="{Binding Item.ImageUrl}" Stretch="UniformToFill" MaxWidth="1000"/>
                 <controls:HtmlBlock
                     Margin="12,24"
                     Source="{Binding Item.Content}" MaxWidth="1000" HorizontalAlignment="Center"/>

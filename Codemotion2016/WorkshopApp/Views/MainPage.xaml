@@ -69,5 +69,20 @@
                 </DataTemplate>
             </controls:ResponsiveGridView.ItemTemplate>
         </controls:ResponsiveGridView>
+        <Grid Grid.Row="1" Visibility="{Binding LoadingGridVisibility}" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="15">
+            <Grid.Background>
+                <SolidColorBrush Color="#333" Opacity="0.7"/>
+            </Grid.Background>
+            <TextBlock                
+                FontSize="22"
+                Margin="16"
+                TextWrapping="Wrap"
+                FontWeight="SemiBold"
+                TextAlignment="Center"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Foreground="#ddd"
+                Text="Cargando nuevos artículos..."/>
+        </Grid>
     </Grid>
 </Page>
