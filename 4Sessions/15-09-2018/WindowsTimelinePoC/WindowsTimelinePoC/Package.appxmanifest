@@ -44,7 +44,7 @@
 
       <Extensions>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="wtsapp">
+          <uap:Protocol Name="windowstimelinepoc">
             <uap:Logo>Assets\Icon.png</uap:Logo>
             <uap:DisplayName>WindowsTimelinePoC</uap:DisplayName>
           </uap:Protocol>
